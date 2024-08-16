@@ -2,7 +2,7 @@
   "name": "app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/toxidity-18/P-2-p.git",
+  "homepage": "https://toxidity-18/.github.io/P-2-p",
   "type": "module",
   "scripts": {
     "dev": "vite",
