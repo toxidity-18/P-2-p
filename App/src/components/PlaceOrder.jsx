@@ -9,7 +9,7 @@ const PlaceOrder = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/products')
+    axios.get('http://localhost:3000/products')
       .then(response => setProducts(response.data))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
@@ -21,7 +21,7 @@ const PlaceOrder = () => {
       deliveryAddress,
     };
 
-    axios.post('http://localhost:5000/orders', order)
+    axios.post('http://localhost:3000/orders', order)
       .then(() => setMessage('Order placed successfully!'))
       .catch(error => console.error('Error placing order:', error));
   };
