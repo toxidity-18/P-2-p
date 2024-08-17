@@ -1,5 +1,8 @@
 # Gatung’ang’a Auto Spares Order & Deliver App(App)
+<<<<<<< HEAD
 #Blog link [G.A.S.O.D; Gatung`ang`a Auto Spare Order And Deliver App](https://samuelgichohikamawira.hashnode.dev/gasodgatunganga-auto-spare-order-and-deliver-app)
+=======
+>>>>>>> eb47015 (frst)
 
 ## Problem Statement
 
@@ -82,7 +85,10 @@ sh
 npm run dev
 
 The application will be available at http://localhost:5173.
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> eb47015 (frst)
 
 ## Usage
 
