@@ -15,7 +15,7 @@ const Header = () => {
     <header className="bg-cover bg-center rounded-xl shadow-lg text-slate-950 p-6" style={{ backgroundImage: `url('https://i.pinimg.com/564x/c6/ba/3a/c6ba3a49410885c6dd450535e53ceb66.jpg')` }}>
       <nav className="container mx-auto flex justify-between items-center py-4 px-4 md:px-0 text-blue-900">
         <h1 className="text-2xl font-bold">G.A.S <span className='text-red-700'>0.D</span></h1>
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-2">
           <li><Link to="/" className="flex items-center hover:text-gray-300 transition-colors duration-200"><HomeIcon className="w-5 h-5 mr-1"/>Home</Link></li>
           
           {/* Dropdown Menu for Catalog */}
