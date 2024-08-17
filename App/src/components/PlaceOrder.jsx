@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -9,7 +11,7 @@ const PlaceOrder = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/products')
+    axios.get('https://host-api-zhbq.onrender.com/products')
       .then(response => setProducts(response.data))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
@@ -21,14 +23,14 @@ const PlaceOrder = () => {
       deliveryAddress,
     };
 
-    axios.post('http://localhost:3000/orders', order)
+    axios.post('https://host-api-zhbq.onrender.com/orders', order)
       .then(() => setMessage('Order placed successfully!'))
       .catch(error => console.error('Error placing order:', error));
   };
 
   return (
-    <div>
-      <h2 className="text-2xl font-semibold mb-4">Place an Order</h2>
+    <div className="max-w-lg mx-auto p-6 bg-black rounded-lg shadow-lg">
+      <h2 className="text-2xl font-semibold mb-4 text-purple-600">Place an Order</h2>
 
       {/* Order Form */}
       <form className="space-y-4">
@@ -38,7 +40,7 @@ const PlaceOrder = () => {
             id="product"
             value={selectedProduct}
             onChange={(e) => setSelectedProduct(e.target.value)}
-            className="border rounded-lg p-2 w-full"
+            className="border rounded-lg p-2 w-full cursor-pointer"
           >
             <option value="">--Select a product--</option>
             {products.map(product => (
@@ -86,4 +88,4 @@ const PlaceOrder = () => {
   );
 };
 
-export default PlaceOrder;
+export default PlaceOrder

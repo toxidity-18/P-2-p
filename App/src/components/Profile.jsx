@@ -25,10 +25,10 @@ const Profile = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4">User Profile</h2>
-      <div className="border rounded-lg p-4 bg-white shadow-md">
+      <h2 className="text-2xl text-center text-purple-600 font-semibold mb-4">User Profile</h2>
+      <div className="border rounded-lg p-4 bg-black shadow-md">
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2">Email</label>
+          <label className="block text-red-700 mb-2">Email</label>
           <input
             type="email"
             value={email}
@@ -37,7 +37,7 @@ const Profile = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-2">Password</label>
+          <label className="block text-green-900 mb-2">Password</label>
           <input
             type="password"
             value={password}
@@ -46,17 +46,17 @@ const Profile = () => {
           />
         </div>
         {isSigningUp ? (
-          <button onClick={handleSignUp} className="bg-green-600 text-white p-2 rounded-lg">
+          <button onClick={handleSignUp} className="bg-green-600 text-purple-600 p-2 rounded-lg">
             Sign Up
           </button>
         ) : (
-          <button onClick={handleSignIn} className="bg-blue-600 text-white p-2 rounded-lg">
+          <button onClick={handleSignIn} className="bg-blue-600 text-orange-900 p-2 rounded-lg">
             Sign In
           </button>
         )}
         <button
           onClick={() => setIsSigningUp(!isSigningUp)}
-          className="mt-4 text-blue-600 hover:underline"
+          className="mt-4 text-blue-600 hover:underline py-4 ml-2"
         >
           {isSigningUp ? 'Already have an account? Sign In' : "Don't have an account? Sign Up"}
         </button>

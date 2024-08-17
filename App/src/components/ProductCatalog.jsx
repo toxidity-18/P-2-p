@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -8,7 +7,7 @@ const ProductCatalog = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/products')
+    axios.get('https://host-api-zhbq.onrender.com/products')
       .then(response => setProducts(response.data))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
@@ -18,8 +17,16 @@ const ProductCatalog = () => {
   );
 
   return (
-    <div>
-      <h2 className="text-2xl font-semibold  text-red-800 mb-4">Product Catalog</h2>
+    <div
+      className="min-h-screen p-8"
+      style={{
+        backgroundImage: "url('https://i.pinimg.com/564x/63/f9/ca/63f9ca4dfadcdf712453c4a03b716018.jpg')",
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat', 
+      }}
+    >
+      <h2 className="text-2xl font-semibold text-red-800 mb-4">Product Catalog</h2>
       
       {/* Search Bar */}
       <input

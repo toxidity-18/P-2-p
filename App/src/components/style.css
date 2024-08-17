@@ -1,0 +1,4 @@
+.placeholder-transparent::placeholder {
+    color: transparent;
+  }
+  

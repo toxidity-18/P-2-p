@@ -7,7 +7,7 @@ const TrackOrder = () => {
   const [message, setMessage] = useState('');
 
   const handleTrackOrder = () => {
-    axios.get(`http://localhost:5000/orders/${orderId}`)
+    axios.get(`https://host-api-zhbq.onrender.com/orders/${orderId}`)
       .then(response => setOrderStatus(response.data))
       .catch(error => {
         console.error('Error tracking order:', error);
