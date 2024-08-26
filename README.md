@@ -1,13 +1,6 @@
 # Gatung’ang’a Auto Spares Order & Deliver App(App)
-<<<<<<< HEAD
-<<<<<<< HEAD
 #Blog link [G.A.S.O.D; Gatung`ang`a Auto Spare Order And Deliver App](https://samuelgichohikamawira.hashnode.dev/gasodgatunganga-auto-spare-order-and-deliver-app)
-=======
->>>>>>> eb47015 (frst)
-=======
 ## More information about the app take a look at this blog link [G.A.S.O.D;GatungangaAutoSpareOrderAndDeliverApp](https://samuelgichohikamawira.hashnode.dev/gasodgatunganga-auto-spare-order-and-deliver-app)
->>>>>>> 9c64de7 (first)
-
 ## Problem Statement
 
 Many businesses face significant challenges in managing the product cycle, from availability to final delivery. Key issues include unreliable supply chain performance and the need for an effective customer feedback system. These factors not only affect customer satisfaction but also impact overall business performance.
@@ -89,15 +82,8 @@ sh
 npm run dev
 
 The application will be available at http://localhost:5173.
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
-=======
->>>>>>> eb47015 (frst)
-=======
-```
->>>>>>> 9c64de7 (first)
 
+```
 ## Usage
 
 - **Browse Product Catalog:**
